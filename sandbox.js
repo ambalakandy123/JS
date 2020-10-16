@@ -137,18 +137,92 @@
 // console.log(!true);
 // console.log(!false);
 
-const scores =[50, 25, 0, 30, 100, 20, 10]
+// const scores =[50, 25, 0, 30, 100, 20, 10]
 
-for(let i = 0; i<scores.length; i++){
+// for(let i = 0; i<scores.length; i++){
 
-    if(scores[i] === 0 ){
-        continue; 
-    }
+//     if(scores[i] === 0 ){
+//         continue; 
+//     }
 
-    console.log('your score: ', scores[i]);
+//     console.log('your score: ', scores[i]);
 
-    if (scores[i] === 100){
-        console.log('congrats you scored well')
-        break;
-    }
-}
+//     if (scores[i] === 100){
+//         console.log('congrats you scored well')
+//         break;
+//     }
+// }
+
+// const grade = 'A';
+
+// switch(grade){
+//     case 'A':
+//         console.log('you got an A!');
+//         break; 
+//     case 'B':
+//         console.log('you got an B!');
+//         break;
+//     case 'C':
+//         console.log('you got an C!');
+//         break;
+//     case 'D':
+//         console.log('you got an D!');
+//         break;
+//     default:
+//         console.log('not a valid grade');
+// }
+
+// let age=30;
+// if(true){
+//     let age = 40;
+//     let name = 'ranjith'
+//     console.log('inside code block: ', age, name);
+
+//     if(true){
+//         const age = 50;
+//         console.log('inside 2nd block: ', age);
+//     }
+// }
+// console.log('outside code block: ', age, name);
+
+//function declaration
+
+// function greet(){
+//     console.log('hello there');
+// }
+// function expression
+
+// const speak = function(name, time){
+//     console.log(`good ${time} ${name}`);
+// };
+
+// // greet();
+// speak('tommy', 'morning');
+
+// const calcArea = function(radius){
+//      return 3.14 * radius ** 2; 
+    
+// }
+
+// arrow funtion
+
+// const calcArea = (radius) => 3.14 * radius ** 2
+
+// const a = calcArea(5);
+// console.log(a);
+
+//arrow function practice
+// const greet = () => 'hello world'
+
+// const b = greet();
+// console.log(b)
+
+// const bill = function(product, tax){
+//     let total = 0;
+//     for(let i=0; i < product.length; i++){
+//         total += product[i] + product[i] * tax;
+//     }
+//     return total; 
+// }
+
+// console.log(bill([10, 15, 30], 0.2));
