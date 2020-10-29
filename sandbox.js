@@ -226,3 +226,38 @@
 // }
 
 // console.log(bill([10, 15, 30], 0.2));
+// const bill =(products, tax) =>{
+//     let total = 0;
+//     for(let i=0; i<products.length; i++){
+//         total += products[i] + products[i] * tax;
+//     }
+//     return total; 
+// };
+
+// console.log(bill([10,15,30], 0.2));
+
+
+// const calcArea = function(radius){
+//     let area = 3.14 * radius**2;
+//     return area; 
+// }
+
+// const area = calcArea(5);
+// console.log(area);
+
+// function greet(){
+//     console.log("hello world")
+// }
+// greet();
+
+// const speak = function(){
+//     console.log("blah blah");
+// };
+// speak();
+
+// const speak = function(name, time){
+//     console.log(`good ${time} ${name}`);
+
+// };
+// speak('ranjith', 'morning');
+
