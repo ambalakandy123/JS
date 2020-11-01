@@ -261,3 +261,188 @@
 // };
 // speak('ranjith', 'morning');
 
+// const calcArea = function(radius){
+//     return 3.14 * radius ** 2;
+     
+// }
+
+// const area = calcArea(5);
+// console.log(area);
+
+// const calcArea = radius => 3.14 * radius **2;
+
+// const area = calcArea(5);
+// console.log('area is:', area);
+
+// const greet = () => 'hello world';
+// const result = greet();
+// console.log(result);
+
+// const bill = function (product, tax){
+//     let total = 0; 
+//     for (let i=0; i< product.length; i++){
+//     total += product[i] + product[i] * tax; 
+// }
+// return total; 
+// }
+
+// console.log(bill([10,15,30],0.2))
+
+// const bill =(product, tax)=>{
+//     let total =0;
+//     for(let i=0; i< product.length; i++){
+//         total += product[i]+ product[i] * tax; 
+//     }
+//     return total 
+// };
+// console.log(bill([10,15,30],0.2))
+
+// const name = 'ranjith';
+
+// //function
+// const greet = () => 'hello';
+
+// let resultOne = greet();
+// console.log(resultOne);
+
+// //methods
+//  let resultTwo = name.toUpperCase();
+//  console.log(resultTwo);
+
+// callbacks & foreach
+// const myFunc = (callbackFunc) => {
+//     let value =50; 
+//     callbackFunc(value);
+// };
+
+// myFunc(value=>{
+//     console.log(value);
+// });
+//  let people=['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+//  const logPerson =(person, index) => {
+//      console.log(`${index} - hello ${person}`);
+//  }
+
+//  people.forEach(logPerson);
+
+// const ul = document.querySelector('.people');
+// let people=['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+// let html =``;
+// people.forEach((person) =>{
+    
+//     html += `<li style="color: purple">${person}</li>`;
+
+// });
+
+// console.log(html);
+// ul.innerHTML = html;
+
+// let user = {
+//     name: 'johnWick',
+//     age: 39,
+//     email:'johnwick@comicado.co.us',
+//     location:'anonymous',
+//     mission:['high table politics with gun','Love the dogs']
+// };
+
+// console.log(user);
+// console.log(user.name);
+
+// console.log(user['email']);
+// user['name'] = 'hauo sang';
+// console.log(user['name']);
+
+// console.log(typeof user);
+
+
+// let user = {
+//         name: 'johnWick',
+//         age: 39,
+//         email:'johnwick@comicado.co.us',
+//         location:'anonymous',
+//         mission:['high table politics with gun','Love the dogs'],
+//         login(){
+//             console.log('the user logged in');
+//         },
+//         logout(){
+//             console.log('the user logged out')
+//         },
+//         logBlogs(){
+//             // console.log(this.mission)
+//             console.log('this user has finished the mission:');
+//             this.mission.forEach(missions => {
+//                 console.log(missions);
+//             });
+//             // console.log(this);
+//         }
+//     };
+//     user.logBlogs();
+//     console.log(this);
+
+// const mission =[
+
+// ];
+
+// console.log(mission);
+    // let user = {
+    //     name: 'johnWick',
+    //     age: 39,
+    //     email:'johnwick@comicado.co.us',
+    //     location:'anonymous',
+    //     mission:[
+    //         {title: 'why the rules are so important', likes:30},
+    //         {title: '10 things you should remember always',likes:50}
+    //     ],
+    //     login(){
+    //         console.log('the user logged in');
+    //     },
+    //     logout(){
+    //         console.log('the user logged out')
+    //     },
+    //     logBlogs(){
+    //         // console.log(this.mission)
+    //         console.log('this user has finished the mission:');
+    //         this.mission.forEach(missions => {
+    //             console.log(missions.title, missions.likes);
+    //         });
+    //         // console.log(this);
+    //     }
+    // };
+    // user.logBlogs();
+    // console.log(this);
+
+
+//Math objects
+
+    // console.log(Math);
+    // console.log(Math.PI);
+
+    // const area=7.7;
+
+    // console.log(Math.round(area));
+    // console.log(Math.exp(area));
+    // console.log(Math.floor(area));
+    // console.log(Math.ceil(area));
+
+    // const random = Math.random();
+    // console.log(random);
+    // console.log(Math.round(random * 100));
+//Premitive 
+// let scoreOne = 50;
+// let scoreTwo  = scoreOne;
+
+// console.log(`scoreOne: ${scoreOne}`,`scoreTwo: ${scoreTwo}`);
+
+// scoreOne = 100; 
+// console.log(`scoreOne: ${scoreOne}`,`scoreTwo: ${scoreTwo}`);
+
+//reference Values
+
+const userOne = { name: 'ranjit', age: 30};
+const userTwo = userOne;
+
+console.log(userOne, userTwo);
+
+userTwo.age = 40;
+console.log(userOne, userTwo);
