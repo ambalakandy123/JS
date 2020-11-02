@@ -437,12 +437,108 @@
 // scoreOne = 100; 
 // console.log(`scoreOne: ${scoreOne}`,`scoreTwo: ${scoreTwo}`);
 
-//reference Values
+//reference 
 
-const userOne = { name: 'ranjit', age: 30};
-const userTwo = userOne;
+// const userOne = { name: 'ranjit', age: 30};
+// const userTwo = userOne;
 
-console.log(userOne, userTwo);
+// console.log(userOne, userTwo);
 
-userTwo.age = 40;
-console.log(userOne, userTwo);
+// userTwo.age = 40;
+// console.log(userOne, userTwo);
+
+// const para = document.querySelector('.error')
+
+// console.log(para);
+
+// const para = document.querySelector('div.error')
+
+// console.log(para);
+
+// const paras = document.querySelectorAll('p');
+// const errors = document.querySelectorAll('.error');
+// console.log(errors);
+// console.log(paras[2]);
+
+//get element by id
+
+    // const title = document.getElementById('page-title');
+    // console.log(title);
+
+// //get element by their class 
+
+    // const errors = document.getElementsByClassName('error');
+    // console.log(errors);
+    // console.log(errors[0])
+
+//get name by their tag name
+
+    // const paras = document.getElementsByTagName('p');
+    // console.log(paras);
+    // console.log(paras[0]);
+
+
+// const para = document.querySelector('p');
+// console.log(para.innerText);
+
+// para.innerText = 'ninjas are awesome';
+// const paras = document.querySelectorAll('p');
+
+// paras.forEach(para => {
+//     console.log(para.innerText);
+//     para.innerText += ' new text';
+// });
+
+
+// const content = document.querySelector('.content');
+// console.log(content.innerHTML);
+
+// content.innerHTML = '<h2> this is ane H2</h2>';
+
+// const people = ['mario', 'jack', 'Rodrigauz'];
+// people.forEach(person => {
+//     content.innerHTML += `<p>${person}</p>`;
+// })
+
+// const link =document.querySelector('a');
+
+// console.log(link.getAttribute('href'));
+// link.setAttribute('href', 'https://www.facebook.com');
+// link.innerText = 'The place where you can advertise';
+
+// const mssg = document.querySelector('p');
+
+// console.log(mssg.getAttribute('class'));
+// mssg.setAttribute('class', 'success');
+// mssg.setAttribute('style','color:Red');
+
+// const title = document.querySelector('h1');
+// title.setAttribute('style', 'margin:50px;s');
+// console.log(title.style);
+// console.log(title.style.color);
+
+// title.style.margin = '50px';
+// title.style.color = 'green';
+// title.style.fontSize = '60px';
+
+// const content = document.querySelector('p');
+
+// console.log(content.classList);
+// content.classList.add('error');
+// content.classList.remove('error');
+
+const paras = document.querySelectorAll('p');
+
+paras.forEach(p =>{
+    if(p.textContent.includes('error')){
+        p.classList.add('error')
+    }
+    if(p.innerText.includes('success')){
+        p.classList.add('success')
+    }
+    console.log(p.textContent);
+});
+
+const title = document.querySelector('.title')
+title.classList.toggle('test');
+title.classList.toggle('test');
