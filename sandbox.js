@@ -49,7 +49,7 @@
 // console.log(name > 'Cristy');
 
 
-//For loops
+// For loops
 
 // for (let i = 0; i<5; i++){
 //     console.log('in loop:', i)
@@ -185,7 +185,7 @@
 // }
 // console.log('outside code block: ', age, name);
 
-//function declaration
+// function declaration
 
 // function greet(){
 //     console.log('hello there');
@@ -211,7 +211,7 @@
 // const a = calcArea(5);
 // console.log(a);
 
-//arrow function practice
+// arrow function practice
 // const greet = () => 'hello world'
 
 // const b = greet();
@@ -385,50 +385,50 @@
 // ];
 
 // console.log(mission);
-    // let user = {
-    //     name: 'johnWick',
-    //     age: 39,
-    //     email:'johnwick@comicado.co.us',
-    //     location:'anonymous',
-    //     mission:[
-    //         {title: 'why the rules are so important', likes:30},
-    //         {title: '10 things you should remember always',likes:50}
-    //     ],
-    //     login(){
-    //         console.log('the user logged in');
-    //     },
-    //     logout(){
-    //         console.log('the user logged out')
-    //     },
-    //     logBlogs(){
-    //         // console.log(this.mission)
-    //         console.log('this user has finished the mission:');
-    //         this.mission.forEach(missions => {
-    //             console.log(missions.title, missions.likes);
-    //         });
-    //         // console.log(this);
-    //     }
-    // };
-    // user.logBlogs();
-    // console.log(this);
+//     let user = {
+//         name: 'johnWick',
+//         age: 39,
+//         email:'johnwick@comicado.co.us',
+//         location:'anonymous',
+//         mission:[
+//             {title: 'why the rules are so important', likes:30},
+//             {title: '10 things you should remember always',likes:50}
+//         ],
+//         login(){
+//             console.log('the user logged in');
+//         },
+//         logout(){
+//             console.log('the user logged out')
+//         },
+//         logBlogs(){
+//             // console.log(this.mission)
+//             console.log('this user has finished the mission:');
+//             this.mission.forEach(missions => {
+//                 console.log(missions.title, missions.likes);
+//             });
+//             // console.log(this);
+//         }
+//     };
+//     user.logBlogs();
+//     console.log(this);
 
 
-//Math objects
+// Math objects
 
-    // console.log(Math);
-    // console.log(Math.PI);
+//     console.log(Math);
+//     console.log(Math.PI);
 
-    // const area=7.7;
+//     const area=7.7;
 
-    // console.log(Math.round(area));
-    // console.log(Math.exp(area));
-    // console.log(Math.floor(area));
-    // console.log(Math.ceil(area));
+//     console.log(Math.round(area));
+//     console.log(Math.exp(area));
+//     console.log(Math.floor(area));
+//     console.log(Math.ceil(area));
 
-    // const random = Math.random();
-    // console.log(random);
-    // console.log(Math.round(random * 100));
-//Premitive 
+//     const random = Math.random();
+//     console.log(random);
+//     console.log(Math.round(random * 100));
+// Premitive 
 // let scoreOne = 50;
 // let scoreTwo  = scoreOne;
 
@@ -437,7 +437,7 @@
 // scoreOne = 100; 
 // console.log(`scoreOne: ${scoreOne}`,`scoreTwo: ${scoreTwo}`);
 
-//reference 
+// reference 
 
 // const userOne = { name: 'ranjit', age: 30};
 // const userTwo = userOne;
@@ -460,22 +460,22 @@
 // console.log(errors);
 // console.log(paras[2]);
 
-//get element by id
+// get element by id
 
-    // const title = document.getElementById('page-title');
-    // console.log(title);
+//     const title = document.getElementById('page-title');
+//     console.log(title);
 
 // //get element by their class 
 
-    // const errors = document.getElementsByClassName('error');
-    // console.log(errors);
-    // console.log(errors[0])
+//     const errors = document.getElementsByClassName('error');
+//     console.log(errors);
+//     console.log(errors[0])
 
-//get name by their tag name
+// get name by their tag name
 
-    // const paras = document.getElementsByTagName('p');
-    // console.log(paras);
-    // console.log(paras[0]);
+//     const paras = document.getElementsByTagName('p');
+//     console.log(paras);
+//     console.log(paras[0]);
 
 
 // const para = document.querySelector('p');
@@ -527,18 +527,129 @@
 // content.classList.add('error');
 // content.classList.remove('error');
 
-const paras = document.querySelectorAll('p');
+// const paras = document.querySelectorAll('p');
 
-paras.forEach(p =>{
-    if(p.textContent.includes('error')){
-        p.classList.add('error')
-    }
-    if(p.innerText.includes('success')){
-        p.classList.add('success')
-    }
-    console.log(p.textContent);
-});
+// paras.forEach(p =>{
+//     if(p.textContent.includes('error')){
+//         p.classList.add('error')
+//     }
+//     if(p.innerText.includes('success')){
+//         p.classList.add('success')
+//     }
+//     console.log(p.textContent);
+// });
 
-const title = document.querySelector('.title')
-title.classList.toggle('test');
-title.classList.toggle('test');
+// const title = document.querySelector('.title')
+// title.classList.toggle('test');
+// title.classList.toggle('test');
+//for loops
+// for(let i=0; i < 5 ; i++){
+// console.log('in loop: ', i);
+// }
+// console.log('loop finished');
+
+// const names =['ranji', 'krish', 'priya', 'suju'];
+// for(let i=0; i <names.length; i++){
+//     //console.log(names[i]);
+//     let html =`<div>${names[i]}</div>`;
+//     console.log(html);
+// }
+
+//while loops
+// let i =0;
+// while(i < 5){
+//     console.log('log loop: ', i);
+//     i++;
+// }
+// const names = ['ranji', 'rando', 'anzia'];
+// i=0;
+// while( i< names.length){
+//     console.log(names[i]);
+//     i++;
+// }
+//do while loop
+// let i=0;
+// do{
+//     console.log('val of i is:', i);
+//     i++
+// }while (i < 5);
+
+//if statements
+
+// const age = 23;
+
+// if(age > 20){
+//     console.log("you are over 20 years old");
+// }
+
+// const ninjas = ['shaun', 'riya', 'maho', 'luci'];
+
+// if(ninjas.length > 3){
+//     console.log("that is a lot of ninjas");
+// }
+
+// const password = 'pajgflsihhgj';
+// if(password.length >= 12 ){
+//     console.log('that password is mighty strong');
+// }
+// else if(password.length >=8){
+//     console.log('the password is long enough');
+// }else{ 
+//     console.log('Password streangth is poor u will loose');
+// }
+
+//logical operator - OR || and AND &&
+
+// const password = 'a@cdddd';
+
+// if (password.length >= 12 && password.includes('@')){
+//     console.log('the password is mighty strong');
+// } else if(password.length >= 8 || password.includes('@') && password.length >5){
+//     console.log('the password is strong');
+// }else{
+//     console.log('the password is too weak');
+// }
+
+//logical NOT(!)
+
+// let user = false;
+// if(user){
+//     console.log('the csondition is :', user);
+// }
+// console.log(!true)
+// console.log(!false)
+
+// break and continue
+// const scores = [50,20,30, 25, 10, 0, 100];
+
+// for(let i = 0; i < scores.length; i++){
+
+//     if (scores[i] === 0){
+//         continue;
+//     }
+//     console.log('your score: ', scores[i]);
+
+//     if (scores[i]==100){
+//         console.log('congrats, you got the top score');
+//         break;
+//     }
+// }
+// switch statement
+
+// const grade = 'C';
+
+// switch(grade){
+//     case 'A':
+//         console.log('you got an A!');
+//         break;
+//     case 'B':
+//         console.log('you got an B!');
+//         break;
+//     case 'C':
+//         console.log('you got an C!');
+//         break;
+//     default:
+//         console.log('The grade is not valid');
+// }
+
+
