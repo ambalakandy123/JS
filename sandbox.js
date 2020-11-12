@@ -651,5 +651,100 @@
 //     default:
 //         console.log('The grade is not valid');
 // }
+//function 
+// const speak = function (name = 'krishna', time= 'morning'){
+//     console.log(`good ${time} ${name}`);
 
+// };
+// speak();
+
+// const calcArea = function(radius){
+//     let area = 3.14* radius ** 2;
+//     return(area);
+// }
+
+// const a = calcArea(5);
+// console.log(a);
+
+// const calcArea = radius => 3.14 * radius ** 2;
+
+// const a = calcArea(5);
+// console.log(a);
+
+// const bill = (product,tax)=>{
+//     let total = 0;
+//     for(let i=0; i < product.length; i++){
+//         total += product[i]+product[i] * tax;
+//     }
+//     return total; 
+// };
+
+// console.log([10,15,30],0.2);
+
+// const myFunc = (callbackFunc)=> {
+//     let value =39;
+//     callbackFunc(value);
+// };
+// myFunc(function(value){
+//     console.log(value);
+// });
+//callbacks & foreach
+
+// let people = ['kario', 'lukiyo', 'nasto', 'franko'];
+
+// // people.forEach((person, index)=>{
+// //     console.log(index, person);
+// // });
+
+// const persona = (person, index) => {
+//     console.log(`${index} - hello ${person}`);
+// };
+
+// people.forEach(persona);
+
+// const ul = document.querySelector('.people');
+
+// const people = ['kario', 'lukiyo', 'nasto', 'franko'];
+// let html =``;
+
+// people.forEach(function(person){
+//     html += `<li style="color: purple">${person}</li>`
+// });
+
+// console.log(html);
+// ul.innerHTML = html;
+
+let user = {
+    name: 'ranjith',
+    age: 30,
+    email:'ranjith.ra28@gmail.com',
+    location:'Brisbane',
+    blogs: ['why the JS rule the web', 'benefits of react.js framework'],
+    login: function(){
+        console.log('the user logged in');
+    },
+    logout: function(){
+        console.log('the user logged out');
+    },
+    logBlogd: function(){
+        console.log('this user has written the following blogs: ')
+        this.blogs.forEach(blog => {
+            console.log(blog);
+        })
+    }
+};
+
+// console.log(user);
+// console.log(user.name);
+
+// console.log(user.age);
+// console.log(user['email']);
+// user['name'] = 'chun-li';
+// user.age = 28;
+// console.log(typeof name);
+
+user.login();
+user.logout();
+user.logBlogd();
+console.log(this);
 
