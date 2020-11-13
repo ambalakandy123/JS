@@ -542,7 +542,7 @@
 // const title = document.querySelector('.title')
 // title.classList.toggle('test');
 // title.classList.toggle('test');
-//for loops
+// for loops
 // for(let i=0; i < 5 ; i++){
 // console.log('in loop: ', i);
 // }
@@ -555,7 +555,7 @@
 //     console.log(html);
 // }
 
-//while loops
+// while loops
 // let i =0;
 // while(i < 5){
 //     console.log('log loop: ', i);
@@ -567,14 +567,14 @@
 //     console.log(names[i]);
 //     i++;
 // }
-//do while loop
+// do while loop
 // let i=0;
 // do{
 //     console.log('val of i is:', i);
 //     i++
 // }while (i < 5);
 
-//if statements
+// if statements
 
 // const age = 23;
 
@@ -598,7 +598,7 @@
 //     console.log('Password streangth is poor u will loose');
 // }
 
-//logical operator - OR || and AND &&
+// logical operator - OR || and AND &&
 
 // const password = 'a@cdddd';
 
@@ -610,7 +610,7 @@
 //     console.log('the password is too weak');
 // }
 
-//logical NOT(!)
+// logical NOT(!)
 
 // let user = false;
 // if(user){
@@ -651,7 +651,7 @@
 //     default:
 //         console.log('The grade is not valid');
 // }
-//function 
+// function 
 // const speak = function (name = 'krishna', time= 'morning'){
 //     console.log(`good ${time} ${name}`);
 
@@ -688,7 +688,7 @@
 // myFunc(function(value){
 //     console.log(value);
 // });
-//callbacks & foreach
+// callbacks & foreach
 
 // let people = ['kario', 'lukiyo', 'nasto', 'franko'];
 
@@ -714,25 +714,25 @@
 // console.log(html);
 // ul.innerHTML = html;
 
-let user = {
-    name: 'ranjith',
-    age: 30,
-    email:'ranjith.ra28@gmail.com',
-    location:'Brisbane',
-    blogs: ['why the JS rule the web', 'benefits of react.js framework'],
-    login: function(){
-        console.log('the user logged in');
-    },
-    logout: function(){
-        console.log('the user logged out');
-    },
-    logBlogd: function(){
-        console.log('this user has written the following blogs: ')
-        this.blogs.forEach(blog => {
-            console.log(blog);
-        })
-    }
-};
+// let user = {
+//     name: 'ranjith',
+//     age: 30,
+//     email:'ranjith.ra28@gmail.com',
+//     location:'Brisbane',
+//     blogs: ['why the JS rule the web', 'benefits of react.js framework'],
+//     login: function(){
+//         console.log('the user logged in');
+//     },
+//     logout: function(){
+//         console.log('the user logged out');
+//     },
+//     logBlogd: function(){
+//         console.log('this user has written the following blogs: ')
+//         this.blogs.forEach(blog => {
+//             console.log(blog);
+//         })
+//     }
+// };
 
 // console.log(user);
 // console.log(user.name);
@@ -743,8 +743,66 @@ let user = {
 // user.age = 28;
 // console.log(typeof name);
 
-user.login();
-user.logout();
-user.logBlogd();
-console.log(this);
+// user.login();
+// user.logout();
+// user.logBlogd();
+// console.log(this);
+
+// let user = {
+//     name: 'ranjith',
+//     age: 28,
+//     email: 'ranjith.ra28@gmail.com',
+//     blogs: ['build things that can help people', 'build something cool and useful'],
+//     login: function(){
+//         console.log('user logged in');
+//     },
+//     logout: function(){
+//         console.log('user logged out');
+//     },
+//     logBlogs: function(){
+//         console.log('this user wrote all this blog');
+//         this.blogs.forEach(blog =>{
+//             console.log(blog);
+//         })
+//     }
+// };
+
+// user.logBlogs();
+
+// let user = {
+//     name: 'ranji',
+//     age: 30,
+//     email:'ranjith.ra28@gmail.com',
+//     location:'brisbane',
+//     blogs:['top 10 conding languages to learn','the top 10 frame works to learn' ],
+//     login: function(){
+//         console.log('the user is loged out');
+//     },
+//     logout: function(){
+//         console.log('the user is loged out');
+//     },
+//     logBlogs: function(){                                //we cannot use the arrow function here because it wornt change the object value.
+//         console.log('the author mentioned about:');
+//         this.blogs.forEach(blog =>{
+//             console.log(blog);
+//         })
+//     }
+// };
+
+// user.logBlogs();
+// let user ={
+// blogs: [
+//     {title:' why the JavaScript is powerful', likes: 30},{title:'10 things to learn in javascript,',likes:50},
+// ],
+
+// logBlogs(){
+// console.log('the other wrote about these topics');
+// this.blogs.forEach(blog =>{
+//     console.log(blog.title, blog.likes)
+// })
+
+// }
+// };
+
+// user.logBlogs();
 
