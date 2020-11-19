@@ -132,14 +132,14 @@
 //         e.target.style.textDecoration = 'line-through';
 //     });
 // });
-const ul = document.querySelector('ul');
-const button = document.querySelector('button');
-button.addEventListener('click', () =>{
-    const li = document.createElement('li');
-    li.textContent = 'somethin new todo';
-    // ul.append(li);
-    ul.prepend(li);
-});
+// const ul = document.querySelector('ul');
+// const button = document.querySelector('button');
+// button.addEventListener('click', () =>{
+//     const li = document.createElement('li');
+//     li.textContent = 'somethin new todo';
+//     // ul.append(li);
+//     ul.prepend(li);
+// });
 
 // const items = document. querySelectorAll('li');
 // items.forEach(item =>{
@@ -150,9 +150,44 @@ button.addEventListener('click', () =>{
 //     })
 // })
 
-ul.addEventListener('click', e =>{
-    // console.log('event in ul tag');
-    if(e.target.tagName === 'LI'){
-        e.target.remove();
-    }
+// ul.addEventListener('click', e =>{
+//     // console.log('event in ul tag');
+//     if(e.target.tagName === 'LI'){
+//         e.target.remove();
+//     }
+// });
+
+// const copy = document.querySelector('.copy-me');
+
+// copy.addEventListener('copy', () =>{
+//     console.log("this is my content and copyright")
+// });
+
+// const box = document.querySelector('.box');
+
+// box.addEventListener('mousemove', e =>{
+//     // console.log(e);
+//     // console.log(e.offsetX, e.offsetY);
+//     box.textContent = `x pos - ${e.offsetX} y pos- ${e.offsetY}`;
+// });
+
+// document.addEventListener('wheel', e => {
+//     // console.log(e);
+//     console.log(e.pageX, e.pageY);
+// })
+
+const button = document.querySelector('button');
+const popup = document.querySelector('.popup-wrapper');
+const close = document.querySelector('.popup-close');
+
+button.addEventListener('click', () =>{
+    popup.style.display ='block';
 });
+
+close.addEventListener('click', ()=>{
+    popup.style.display = 'none';
+})
+
+popup.addEventListener('click', ()=>{
+    popup.style.display = 'none';
+})
