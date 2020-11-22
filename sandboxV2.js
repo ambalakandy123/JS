@@ -176,18 +176,33 @@
 //     console.log(e.pageX, e.pageY);
 // })
 
-const button = document.querySelector('button');
-const popup = document.querySelector('.popup-wrapper');
-const close = document.querySelector('.popup-close');
+// const button = document.querySelector('button');
+// const popup = document.querySelector('.popup-wrapper');
+// const close = document.querySelector('.popup-close');
 
-button.addEventListener('click', () =>{
-    popup.style.display ='block';
+// button.addEventListener('click', () =>{
+//     popup.style.display ='block';
+// });
+
+// close.addEventListener('click', ()=>{
+//     popup.style.display = 'none';
+// })
+
+// popup.addEventListener('click', ()=>{
+//     popup.style.display = 'none';
+// })
+
+const form = document.querySelector('.signup-form');
+// const username = document.querySelector('#username');
+form.addEventListener('submit', e =>{
+e.preventDefault();
+// console.log(username.value)
+console.log(form.username.value);
 });
 
-close.addEventListener('click', ()=>{
-    popup.style.display = 'none';
-})
 
-popup.addEventListener('click', ()=>{
-    popup.style.display = 'none';
-})
+const username = 'shaunes';
+const pattern = /[a-z]{6,}/;
+
+let result = pattern.test(username);
+console.log(result);
