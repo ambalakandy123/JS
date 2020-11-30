@@ -245,4 +245,20 @@
 // for(let i =0; i < names.length; i++){
 //     console.log(names[i]);
 // }
+const form = document.querySelector('.signup-form');
+const feedback = document.querySelector('.feedback');
 
+form.addEventListener('submit', e=> {
+    e.preventDefault();
+
+    const username = form.username.value; 
+    const usernamepattern =/^[a-z A-z]{6,12}$/;
+    if(usernamepattern.test(username)){
+        feedback.textContent = 'that username is valid';
+    } else{
+        feedback.textContent ='username must contain letters only and be between 6 and 12 characters long';
+    }
+})
+form.username.addEventListener('keyup', e =>{
+    console.log(e.target.value.form.username.value);
+});
