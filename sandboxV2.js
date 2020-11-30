@@ -192,17 +192,57 @@
 //     popup.style.display = 'none';
 // })
 
-const form = document.querySelector('.signup-form');
-// const username = document.querySelector('#username');
-form.addEventListener('submit', e =>{
-e.preventDefault();
-// console.log(username.value)
-console.log(form.username.value);
-});
+// const form = document.querySelector('.signup-form');
+// // const username = document.querySelector('#username');
+// form.addEventListener('submit', e =>{
+// e.preventDefault();
+// // console.log(username.value)
+// console.log(form.username.value);
+// });
 
 
-const username = 'shaunes';
-const pattern = /[a-z]{6,}/;
+// const username = 'shaunes';
+// const pattern = /[a-z]{6,}/;
 
-let result = pattern.test(username);
-console.log(result);
+// let result = pattern.test(username);
+// console.log(result);
+
+// const username = 'Kri'
+// const pattern = /[a-z]{6,}/;
+
+// let result = pattern.test(username);
+
+// if(result){
+//     console.log('regex test passed');
+// }
+
+// function alphabetPosition(text) {
+//     var result = "";
+//     for (var i = 0; i < text.length; i++) {
+//       var code = text.toUpperCase().charCodeAt(i)
+//       if (code > 64 && code < 91) result += (code - 64) + " ";
+//     }
+  
+//     return result.slice(0, result.length - 1);
+//   }
+//   console.log(alphabetPosition("The sunset sets at twelve o' clock."));
+
+// for( let i =0; i< 5; i++){
+//     console.log('in loop:', i);
+// }
+// console.log('loop finished');
+
+// for (var i = 1; i < 6; ++i) {
+//     for(var j = 0; j < 3; ++j) {
+//         console.log(i);
+//     }
+// }
+
+// var student = Person(); 
+// var student = new Person(); 
+
+// let names = ['kris', 'mahf', 'ajfhhe', 'fjah'];
+// for(let i =0; i < names.length; i++){
+//     console.log(names[i]);
+// }
+
