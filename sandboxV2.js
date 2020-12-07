@@ -245,20 +245,47 @@
 // for(let i =0; i < names.length; i++){
 //     console.log(names[i]);
 // }
-const form = document.querySelector('.signup-form');
-const feedback = document.querySelector('.feedback');
+// const form = document.querySelector('.signup-form');
+// const feedback = document.querySelector('.feedback');
+// const usernamePattern =/^[a-zA-z]{6,12}$/;
 
-form.addEventListener('submit', e=> {
-    e.preventDefault();
+// form.addEventListener('submit', e=> {
+//     e.preventDefault();
 
-    const username = form.username.value; 
-    const usernamepattern =/^[a-z A-z]{6,12}$/;
-    if(usernamepattern.test(username)){
-        feedback.textContent = 'that username is valid';
-    } else{
-        feedback.textContent ='username must contain letters only and be between 6 and 12 characters long';
-    }
-})
-form.username.addEventListener('keyup', e =>{
-    console.log(e.target.value.form.username.value);
-});
+//     const username = form.username.value; 
+    
+
+//     if(usernamePattern.test(username)){
+//         feedback.textContent = 'that username is valid';
+//     } else{
+//         feedback.textContent ='username must contain letters only and be between 6 and 12 characters long';
+//     }
+// });
+
+
+// form.username.addEventListener('keyup', e =>{
+//     // console.log(e.target.value, form.username.value);
+//     // console.log(e);
+//     if(usernamePattern.test(e.target.value)){
+//         form.username.setAttribute('class', 'success')
+//     }else{
+//         form.username.setAttribute('class', 'error')
+//     }
+// });
+
+//  alert('hello');
+
+// function multiply (a,b){
+//     let result =a*b;
+//     console.log(result);
+//     return result
+// }
+
+// let multi = multiply(4,6);
+
+function findBiggest(){
+ a>b ? console.log("a: ", a): console.log("b: ", b)
+}
+let a= 3/4;
+let b = 5/7;
+findBiggest();
