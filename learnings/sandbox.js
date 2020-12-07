@@ -806,3 +806,72 @@
 
 // user.logBlogs();
 
+// const scores = [10, 30, 15, 25, 50, 40, 5];
+
+// const filteredScores = scores.filter((score) =>{
+//     return score > 20;
+// });
+
+// console.log(filteredScores)
+
+// const users = [
+//     {name: 'sharukh', premium: true},
+//     {name: 'cue-young', premium: false},
+//     {name: 'Laura', premium: false},
+//     {name: 'mahoyaki', premium: true},
+// ];
+
+// const premiumUsers = users.filter( user =>{
+// return user.premium;
+// });
+
+// console.log(premiumUsers)
+// const prices = [10, 30, 15, 25, 50, 40, 5];
+
+// const salePrices = prices.map(price =>{
+//     return price/2; 
+// });
+
+// console.log(salePrices);
+
+// const score = [10,40,50,60,30,20,70];
+
+// const scoreFilters =score.filter(scores =>{
+//     return scores > 20;
+// });
+
+// console.log(scoreFilters);
+
+// const users = [
+//     {name: 'sharukh', premium: true},
+//     {name: 'cue-young', premium: false},
+//     {name: 'Laura', premium: false},
+//     {name: 'mahoyaki', premium: true},
+// ];
+
+// const filterUser = users.filter( user => user.premium );
+//     console.log(filterUser);
+
+const prices = [20,10,40,60,80,90,50,70];
+
+// const salePrices = prices.map(price => price/2);
+// console.log(salePrices);
+
+const product = [
+    {name: 'ferrari', price: 30},
+    {name: 'lambo', price: 80},
+    {name: 'honda', price: 40},
+    {name: 'renult', price: 50},
+    {name: 'reddbull', price: 60},
+];
+
+const saleProduct = product.map((product)=>
+{
+    if(product.price>30){
+        return{name: product.name, price: product.price / 2};
+    }else{
+        return product;
+    }
+});
+
+console.log(saleProduct, product);
