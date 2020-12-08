@@ -852,26 +852,26 @@
 // const filterUser = users.filter( user => user.premium );
 //     console.log(filterUser);
 
-const prices = [20,10,40,60,80,90,50,70];
+// const prices = [20,10,40,60,80,90,50,70];
 
 // const salePrices = prices.map(price => price/2);
 // console.log(salePrices);
 
-const product = [
-    {name: 'ferrari', price: 30},
-    {name: 'lambo', price: 80},
-    {name: 'honda', price: 40},
-    {name: 'renult', price: 50},
-    {name: 'reddbull', price: 60},
-];
+// const product = [
+//     {name: 'ferrari', price: 30},
+//     {name: 'lambo', price: 80},
+//     {name: 'honda', price: 40},
+//     {name: 'renult', price: 50},
+//     {name: 'reddbull', price: 60},
+// ];
 
-const saleProduct = product.map((product)=>
-{
-    if(product.price>30){
-        return{name: product.name, price: product.price / 2};
-    }else{
-        return product;
-    }
-});
+// const saleProduct = product.map((product)=>
+// {
+//     if(product.price>30){
+//         return{name: product.name, price: product.price / 2};
+//     }else{
+//         return product;
+//     }
+// });
 
-console.log(saleProduct, product);
+// console.log(saleProduct, product);
