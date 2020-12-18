@@ -283,9 +283,104 @@
 
 // let multi = multiply(4,6);
 
-function findBiggest(){
- a>b ? console.log("a: ", a): console.log("b: ", b)
-}
-let a= 3/4;
-let b = 5/7;
-findBiggest();
+// const prices = [20, 10, 40, 100, 80, 60];
+
+// const salePrice = prices.map(price => price/2);
+
+// console.log(salePrice);
+
+// const products = [
+//     {name: 'gold star', price:20},
+//     {name: 'mushroom', price: 50},
+//     {name: 'banana', price: 60},
+//     {name:'cherry', price: 80},
+//     {name:'cherry', price: 15}
+// ];
+
+// const saleProduct = products.map((product) => {
+//     if(product.price >30){
+//         return {name: product.name, price: product.price/2}
+//     } else{
+//         return product;
+//     }
+// })
+
+// console.log(saleProduct, products);
+
+// const scores = [20, 10, 40, 100, 80, 60, 70,50];
+// const result = scores.reduce((acc, curr) => {
+//     if(curr > 50){
+//         acc++;
+//     }
+//     return acc;
+// },0);
+
+// console.log(result);
+
+// const scores =[
+//     {player: 'Zee', score: 40},
+//     {player: 'Hiroshi', score: 80},
+//     {player: 'Janis', score: 10},
+//     {player: 'Emma', score: 90},
+//     {player: 'Zee', score: 60},
+//     {player: 'Thomas', score: 50},
+// ];
+
+// const zeeTotal = scores.reduce((acc, curr)=>{
+//     if(curr.player === 'Zee'){
+//         acc += curr.score;
+//     }
+//     return acc;
+// }, 0);
+
+// console.log(zeeTotal);
+
+// const scores = [20, 10, 40, 10, 80, 60, 70, 50, 90];
+
+// const firstHighScore = scores.find((score) => score>40);
+// console.log(firstHighScore)
+
+//function declaration
+
+// function greet(){
+//     console.log ('hello there')
+// }
+// greet();
+
+// //fuction expression 
+// const speak = function(){
+//     console.log('good day')
+// };
+// speak();
+
+// const speak = function(name, time){
+//     console.log(`good ${time} ${name}`);
+// }
+// speak('ranjith', 'morning');
+
+// const names =[ 'ram', 'amu', 'sorya', 'maky', 'ravis'];
+
+// names.sort();
+// console.log(names);
+
+const players =[
+    {player: 'Zee', score: 40},
+    {player: 'Hiroshi', score: 80},
+    {player: 'Janis', score: 10},
+    {player: 'Emma', score: 90},
+    {player: 'Zee', score: 60},
+    {player: 'Thomas', score: 50},
+];
+
+players.sort((a, b) =>
+{
+    if(a.score> b.score){
+        return -1
+    }else if(b.score > a.score){
+        return 1;
+    }else{
+        return 0;
+    }
+})
+
+console.log(players);
