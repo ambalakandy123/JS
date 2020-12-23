@@ -363,24 +363,56 @@
 // names.sort();
 // console.log(names);
 
-const players =[
-    {player: 'Zee', score: 40},
-    {player: 'Hiroshi', score: 80},
-    {player: 'Janis', score: 10},
-    {player: 'Emma', score: 90},
-    {player: 'Zee', score: 60},
-    {player: 'Thomas', score: 50},
+// const players =[
+//     {player: 'Zee', score: 40},
+//     {player: 'Hiroshi', score: 80},
+//     {player: 'Janis', score: 10},
+//     {player: 'Emma', score: 90},
+//     {player: 'Zee', score: 60},
+//     {player: 'Thomas', score: 50},
+// ];
+
+// players.sort((a, b) =>
+// {
+//     if(a.score> b.score){
+//         return -1
+//     }else if(b.score > a.score){
+//         return 1;
+//     }else{
+//         return 0;
+//     }
+// })
+
+// console.log(players);
+
+// console.log(players);
+
+// players.sort((a,b)=>b.score - a.score);
+// console.log(players);
+
+// const scores = [20, 10, 40, 10, 80, 60, 70, 50, 90];
+
+// scores.sort((a,b) => b-a);
+// console.log(scores)
+
+const products =[
+    {name: 'gold coin', price: 40},
+    {name: 'diamond', price: 80},
+    {name: 'silver', price: 10},
+    {name: 'gold chain', price: 20},
+    {name: 'iphone', price: 60},
+    {name: 'silver cat', price: 50},
 ];
 
-players.sort((a, b) =>
-{
-    if(a.score> b.score){
-        return -1
-    }else if(b.score > a.score){
-        return 1;
-    }else{
-        return 0;
-    }
-})
+// const filtered = products.filter(product => product.price >20);
 
-console.log(players);
+// const promos = filtered.map(product => {
+//     return `the ${product.name} is ${product.price/2} pounds`;
+// });
+
+const promos = products
+    .filter(product => product.price >20)
+    .map(product => `the ${product.name} is ${product.price/2} pounds`);
+
+
+console.log(promos);
