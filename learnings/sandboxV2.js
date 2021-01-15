@@ -91,7 +91,7 @@
 // const button = document.querySelector('button');
 // button.addEventListener('click', ()=>{
 //     console.log('you clicked the hell out of me!')
-// }) 
+// })
 
 // const items = document.querySelectorAll('li');
 
@@ -99,9 +99,8 @@
 //     item.addEventListener('click', () =>{
 //         console.log('item clicked');
 //     })
-    
-// });
 
+// });
 
 // const button = document. querySelector('button');
 
@@ -200,7 +199,6 @@
 // console.log(form.username.value);
 // });
 
-
 // const username = 'shaunes';
 // const pattern = /[a-z]{6,}/;
 
@@ -222,7 +220,7 @@
 //       var code = text.toUpperCase().charCodeAt(i)
 //       if (code > 64 && code < 91) result += (code - 64) + " ";
 //     }
-  
+
 //     return result.slice(0, result.length - 1);
 //   }
 //   console.log(alphabetPosition("The sunset sets at twelve o' clock."));
@@ -238,8 +236,8 @@
 //     }
 // }
 
-// var student = Person(); 
-// var student = new Person(); 
+// var student = Person();
+// var student = new Person();
 
 // let names = ['kris', 'mahf', 'ajfhhe', 'fjah'];
 // for(let i =0; i < names.length; i++){
@@ -252,8 +250,7 @@
 // form.addEventListener('submit', e=> {
 //     e.preventDefault();
 
-//     const username = form.username.value; 
-    
+//     const username = form.username.value;
 
 //     if(usernamePattern.test(username)){
 //         feedback.textContent = 'that username is valid';
@@ -261,7 +258,6 @@
 //         feedback.textContent ='username must contain letters only and be between 6 and 12 characters long';
 //     }
 // });
-
 
 // form.username.addEventListener('keyup', e =>{
 //     // console.log(e.target.value, form.username.value);
@@ -347,7 +343,7 @@
 // }
 // greet();
 
-// //fuction expression 
+// //fuction expression
 // const speak = function(){
 //     console.log('good day')
 // };
@@ -395,14 +391,14 @@
 // scores.sort((a,b) => b-a);
 // console.log(scores)
 
-const products =[
-    {name: 'gold coin', price: 40},
-    {name: 'diamond', price: 80},
-    {name: 'silver', price: 10},
-    {name: 'gold chain', price: 20},
-    {name: 'iphone', price: 60},
-    {name: 'silver cat', price: 50},
-];
+// const products = [
+//   { name: "gold coin", price: 40 },
+//   { name: "diamond", price: 80 },
+//   { name: "silver", price: 10 },
+//   { name: "gold chain", price: 20 },
+//   { name: "iphone", price: 60 },
+//   { name: "silver cat", price: 50 },
+// ];
 
 // const filtered = products.filter(product => product.price >20);
 
@@ -410,9 +406,13 @@ const products =[
 //     return `the ${product.name} is ${product.price/2} pounds`;
 // });
 
-const promos = products
-    .filter(product => product.price >20)
-    .map(product => `the ${product.name} is ${product.price/2} pounds`);
+// const promos = products
+//   .filter((product) => product.price > 20)
+//   .map((product) => `the ${product.name} is ${product.price / 2} pounds`);
 
+// console.log(promos);
 
-console.log(promos);
+const now = new Date();
+
+console.log(now);
+console.log(typeof now);
